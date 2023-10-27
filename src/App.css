@@ -1,0 +1,499 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+#snav{
+  display: none;
+}
+
+/* Add this CSS to your stylesheet */
+.card {
+  padding: 14px;
+  border: 2px solid transparent;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+  border: 2px solid transparent;
+  transform: scale(1.1);
+  transition: transform 0.3s, border 0.3s;
+}
+/* Add this CSS to your stylesheet */
+.item:hover {
+  background-color: #f2f2f2; /* Light gray color for the hover effect */
+  transition: background-color 0.3s; /* Transition effect for background-color */
+}
+
+.card.green-border:hover {
+  border-color: green;
+}
+
+.card.red-border:hover {
+  border-color: red;
+}
+
+
+
+nav{
+  height: 70px;
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+
+.rightNav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35%;
+}
+
+
+.rightNav>a{
+  font-weight: 600;
+  color: gray;
+  text-decoration: none;
+}
+
+
+#h1{
+  font-size: 8vw;
+}
+
+#blue{
+  font-size: 8vw;
+  color: blue;
+}
+
+#p{
+  color: gray;
+}
+
+.share-component>button{
+  border-radius: 3rem;
+  font-weight: 600;
+  background-color: white;
+  min-width: 9rem;
+  border: solid 1px blue;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+
+#btn>button,#btn>button>a{
+  color: white;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-weight: 600;
+  background-color: blue;
+  min-width: 9rem;
+  padding: 0.75rem 2rem;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+
+}
+
+
+#btn{
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding: 2rem 0;
+}
+
+
+
+#pic1{
+  position: absolute;
+  width: 25%;
+  height: 562px;
+  left: 68%;
+  top: 40%;
+}
+
+#pic2{
+  width: 30%;
+  height: 658px;
+  position: absolute;
+  left: 65%;
+  top: 28%;
+}
+
+
+#main{
+  display: flex;
+  padding: 15px;
+  /* justify-content: space-around; */
+}
+
+
+#hbox{
+  display: flex;
+  /* padding-left: 5%; */
+  width: 60%;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+
+#d{
+      /* background: white; */
+      color: white;
+      border-radius: 3rem;
+      font-weight: 600;
+      background-color: blue;
+      min-width: 9rem;
+      padding: 0.75rem 2rem;
+      text-align: center;
+      width: -moz-fit-content;
+      width: fit-content;
+}
+
+
+
+
+
+@keyframes translateUpDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-50px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+#pic2 {
+  /* width: 200px;
+  height: 200px; */
+  /* background-color: #3498db; */
+  /* position: relative; */
+  animation: translateUpDown 2s infinite;
+}
+
+
+
+#search{
+  width: 60%;
+  border-radius: 3rem;
+  height: 50px;
+  background: #f3f3f3;
+  border: none;
+}
+
+#grid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+.logo>div>img{
+  width: 40%;
+}
+
+.sInnerCon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  width: 70%;
+}
+
+.card{
+  background: #f3f3f3;
+  margin: 30px;
+}
+
+.innercon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.sInnerCon>h1{
+  font-size: 2vw;
+}
+
+.innercon>h1{
+  font-size: 2vw;
+}
+
+.sInnerCon>p{
+  font-size: 1vw;
+}
+
+.innercon>p{
+  font-size: 1vw;
+}
+
+
+.logo{
+  display: flex;
+
+}
+
+
+#gridItem{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+
+@media(max-width:809px){
+  .inItem{
+    font-size: 1.5vw;
+  }
+  #root{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #hbox{
+    display: flex;
+    /* padding-left: 5%; */
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #imgbox{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    align-self: flex-end;
+  }
+
+  #pic1{
+    position: relative;
+    width: 30%;
+    height: 415px;
+    left: 55%;
+    top: 62px;
+  }
+
+  #pic2{
+        /* background-color: #3498db; */
+    /* position: relative; */
+       /* background-color: #3498db; */
+    /* position: relative; */
+    width: 40%;
+    height: 465px;
+    position: absolute;
+    left: 48%;
+    top: 10%;
+    animation: translateUpDown 2s infinite;
+  }
+  #snav{
+    display: contents;
+  }
+  #fnav{
+    display: none;
+  }
+
+
+  @media(max-width:490px){
+
+    #pic1{
+      position: relative;
+      width: 30%;
+      height: 235px;
+      left: 55%;
+      top: 62px;
+    }
+
+    #pic2{
+          /* background-color: #3498db; */
+    /* position: relative; */
+    /* background-color: #3498db; */
+    /* position: relative; */
+    width: 40%;
+    height: 308px;
+    position: absolute;
+    left: 48%;
+    top: 10%;
+    animation: translateUpDown 2s infinite;
+    }
+
+  }
+}
+
+
+#listItem{
+  display: flex;
+  width: 100%;
+}
+
+.item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.item>img{
+  width: 5%;
+}
+
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  /* max-width: 80%; */
+  width: 100%;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Background color for grid items */
+  border: 1px solid #ddd; /* Border for grid items */
+}
+
+.coin-image {
+  max-width: 50px;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.coin-details {
+  display: flex;
+  justify-content: center;
+  width: 99%;
+}
+
+.coin-name {
+  font-weight: bold;
+}
+
+.coin-price {
+  color: #333;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+
+.inItem{
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+/* Add these CSS styles for button layout and highlighting */
+.view-button {
+  width: 50%;
+  padding: 10px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333; /* Default text color */
+  border-bottom: 2px solid transparent; /* Default border color */
+}
+
+.view-button.active {
+  border-color: green; /* Highlighted button's border color */
+  color: green; /* Highlighted button's text color */
+}
+
+
+
+
+
+@media(max-width: 768px) {
+
+  .card {
+    margin: 15px; 
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+
+  .innercon, 
+  .sInnerCon {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .card {
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem; 
+  }
+
+}
+
+
+
+/* Add these styles to your CSS stylesheet */
+.list-item {
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.list-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0; /* Light grey color */
+  cursor: pointer;
+}
