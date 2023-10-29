@@ -19,7 +19,7 @@ function Dashboard() {
     
       // Conditionally render HelloComponent when an item is clicked
       if (clickedItemName) {
-        return <Coin itemName={clickedItemName} />;
+        return <Coin coin={clickedItemName} />;
       }
     
 
