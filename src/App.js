@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import Compare from './components/Compare'; // Add this import for the Compare component
 
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {

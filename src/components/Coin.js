@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import CryptoPriceChart from './CryptoPriceChart'; // Import the CryptoPriceChart component
 
 function Coin({ coin }) {
   const [coinData, setCoinData] = useState(null);
@@ -44,6 +45,9 @@ function Coin({ coin }) {
       <p style={styles.description}>{description}</p>
       <p style={styles.info}>Current Price: ${coinData.market_data.current_price.usd}</p>
       <p style={styles.info}>Market Cap: ${coinData.market_data.market_cap.usd}</p>
+
+      {/* Include the CryptoPriceChart component */}
+      <CryptoPriceChart endpoint={`https://api.coingecko.com/api/v3/coins/${coin}/market_chart?vs_currency=usd&days=30`} />
     </div>
   );
 }
