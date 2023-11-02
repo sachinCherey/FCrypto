@@ -8,11 +8,11 @@ function Compare() {
   const [coin1, setCoin1] = useState('');
   const [coin2, setCoin2] = useState('');
   const [duration, setDuration] = useState('7');
-  const [coin1Data, setCoin1Data] = useState([]);
-  const [coin2Data, setCoin2Data] = useState([]);
+  const [coin1Data] = useState([]);
+  const [coin2Data] = useState([]);
   const [coinList, setCoinList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-
+  console.log(searchTerm);
   useEffect(() => {
     // Fetch coin list
     axios
